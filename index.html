@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice to meet you IBL Education!</title>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="#home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Max Searan</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CALL TO ACTION -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="cta">
+                <h1 class="title, hero-title">Hi, IBL!</h1>
+                <p class="blurb">
+                    I am a Designer and Developer that loves to be interdisciplinary. I saw your open position on Indeed. I thought it would be more fun to build something instead of just showing you a boring Github repo :)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Intrest -->
+
+    <section id="#about" class="my_intrest">
+        <div class="container">
+            <img src="./img/me_2.png" alt="portrait_photo" class="me_photo">
+            <div class="intrest_text">
+                <h1 class="title"> My Interest</h1>
+                <p class="blurb">
+                    Living is Austin, there is always an event happening. I enjoy being with friends and family. On weekends we love going to the local coffee shops for some live music and tacos!
+                    <br>
+                    <br>
+                    <strong>"Breakfast tacos are everything"</strong>
+                    <i> ~ Austin, Tx</i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text Overlay -->
+    <section class="cta_2">
+        <div class="overlay">
+            <div class="inner_text">
+                <h2>Fast & Friendly Self-starter </h2>
+                <h3>I think it's important to work with a team.</h3>
+                <p>I believe you do your best work in collaborative environments with like minded people.</p>
+            </div>
+        </div>
+    </section>
+    <!-- gallery photos -->
+    <section class="light_box">
+        <div class="gallery">
+            <a href="./img/barton.png">
+                <img src="./img/barton.png" alt="" class="big">
+                <span class=”green-overlay”></span>
+            </a>
+            <a href="./img/bike.png"><img src="./img/bike.png" alt="" class="big"></a>
+            <a href="./img/bike_shop.png"><img src="./img/bike_shop.png" alt="" class="big"></a>
+            <a href="./img/skyline_austin.png"><img src="./img/skyline_austin.png" alt="" class="big"></a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h3>Thanks for Viewing</h3>
+                <a href="">
+                    <img src="./img/svg/behance.svg" class="icon_svg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="./img/svg/github.svg" class="icon_svg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="./img/svg/linkedin.svg" class="icon_svg" alt="">
+                </a>
+            </div>
+            <div>
+                <h3>I enjoy learning new things</h3>
+                <ul>
+                    <a href="">
+                        <li>Django</li>
+                        <li>Ruby</li>
+                        <li>MySQL</li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <h3>Resume Download</h3>
+                <ul>
+                    <li><a href="#">Quis eligendi voluptatibus!</a></li>
+                    <li><a href="#">Quis eligendi voluptatibus!</a></li>
+                    <li><a href="#">Quis eligendi voluptatibus!</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <form data-netlify="true" name="email-form" method="post">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input 
+                            type = "email"
+                            name = "email"
+                            id = "email"
+                            size = 40
+                            class = "form-control"
+                            placholder = "email"
+                            />
+                        </span>
+                        <button type="submit" class="submit">></button>
+                    </div>
+                </form>
+            </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+
+    <script>
+        $(function() {
+            const $gallery = new SimpleLightbox('.gallery a');
+        });
+    </script>
+
+</body>
+
+</html>
